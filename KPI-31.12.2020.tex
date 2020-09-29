@@ -1,0 +1,119 @@
+\documentclass{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{array}
+\usepackage{wrapfig}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{tabularx}
+\usepackage[top=20mm,
+		bottom=20mm,
+		left=10mm,
+		right=10mm]{geometry}
+\usepackage{booktabs}
+\RequirePackage{fontawesome}
+\RequirePackage{xcolor}
+\RequirePackage[colorlinks = true,
+		linkcolor = blue,
+		urlcolor  = blue,
+		citecolor = blue,
+		anchorcolor = blue]{hyperref}
+\usepackage{enumitem}
+
+\begin{document}
+
+	\section{Knowledge about system development on true middle developer position}
+	\begin{tabular}{ | p{4cm} | p{15cm} | }
+		\hline
+		\textbf{Scope} & \textbf{Must do} \\
+		\hline
+		\vspace{5pt}
+		\textbf{Common courses}
+		&
+		\begin{itemize}[noitemsep, topsep=5pt, parsep=0pt, partopsep=0pt]
+			\item {\href{https://stepik.org/course/1780/syllabus}{\texttt{Operating systems basis}}}
+			\item {\href{https://stepik.org/course/548/syllabus}{\texttt{Linux programming basis}}}
+			\item {\href{https://stepik.org/course/14736/syllabus}{\texttt{How does the Internet work}}}
+			\item {\href{https://stepik.org/course/149/syllabus}{\texttt{Multithreading C/C++}}(optional)}
+		\end{itemize} \\
+		\hline
+		\vspace{5pt}
+		\textbf{Algorithms: list, trees, rbtrees, search}
+		&
+		\begin{itemize}[noitemsep, topsep=5pt, parsep=0pt, partopsep=0pt]
+			\item {\href{http://www.cplusplus.com/reference/stl/}{\texttt{C++ Standard Containers}}}
+			\item \href{https://stepik.org/course/579/syllabus}{\texttt{Data Structures}}
+			\item What does mean shared memory and how it works in optee with tee driver?
+		\end{itemize} \\
+		\hline
+		\vspace{5pt}
+		\textbf{Just for English}
+		&
+		\begin{itemize}[noitemsep, topsep=5pt, parsep=0pt, partopsep=0pt]
+			\item \href{https://www.coursera.org/specializations/embedded-systems-security}{\texttt{Embedded Systems Specialization}} (optional)
+		\end{itemize} \\
+		\hline
+		\vspace{5pt}
+		\textbf{Processes, threads \& Memory Managment}
+		&
+		\begin{itemize}[noitemsep, topsep=5pt, parsep=0pt, partopsep=0pt]
+			\item Andrew Tanenbaum - Modern operating systems
+			\item \href{https://dinus.ac.id/repository/docs/ajar/Operating_System.pdf}{\texttt{Operating Systems Internals and Design Principles}}
+			\item \href{https://people.freebsd.org/~lstewart/articles/cpumemory.pdf}{What Every Programmer Should Know About Memory}
+			 - MMU, page tables, virtual address translations(ARM), TLB, TLB exeptions, CPU caches. How does it work in Linux? In OP-TEE?
+			 How can I align memory for cache line?
+			\item What exactly does mean memory alignment in Linux kernel and in userspace?
+		\end{itemize} \\
+		\hline
+		\vspace{5pt}
+		\textbf{syscalls}
+		&
+		\begin{itemize}[noitemsep, topsep=5pt, parsep=0pt, partopsep=0pt]
+			\item Robert Love - Linux System Programming. Learn all syscalls and see its handlers in Linux
+			\item Write syscall calling with ARM assembler
+		\end{itemize} \\
+		\hline
+		\vspace{5pt}
+		\textbf{Linux Kernel}
+		&
+		\begin{itemize}[noitemsep, topsep=5pt, parsep=0pt, partopsep=0pt]
+			\item Robert Love - Linux Kernel Development
+			\item See real interrupt handler vectors in Linux kernel, in OP-TEE
+			\item Learn device tree, task struct, struct page
+			\item \href{https://lwn.net/Kernel/LDD3/}{Linux Device Drivers}
+			\item \href{http://www.embeddedlinux.org.cn/essentiallinuxdevicedrivers/final/ch04lev1sec2.html#ch04lev1sec2}{Run rotary with interrupt handling in BeagleBoneBoard}
+		\end{itemize} \\
+		\hline
+		\vspace{5pt}
+		\textbf{Common qeustions}
+		&
+		\begin{itemize}[noitemsep, topsep=5pt, parsep=0pt, partopsep=0pt]
+			\item When does userspace start? What does mean initramfs? \href{https://bootlin.com/training/buildroot/}{Buildroot}? \href{https://bootlin.com/training/yocto/}{Yocto}?
+			\item Understand what is kprobes, SElinux, cgroups, ASLR
+			\item What mustn't you do in interrupt context?
+			\item Run Linux in qemu
+		\end{itemize} \\
+		\hline
+		\vspace{5pt}
+		\textbf{ARM specific}
+		&
+		\begin{itemize}[noitemsep, topsep=5pt, parsep=0pt, partopsep=0pt]
+			\item \href{https://developer.arm.com/architectures/learn-the-architecture/introducing-the-arm-architecture}{Introducing the Arm architecture}
+			\item \href{https://developer.arm.com/architectures/learn-the-architecture/exception-model}{Armv8-A Exception model}
+			\item \href{https://developer.arm.com/architectures/learn-the-architecture/armv8-a-instruction-set-architecture}{Armv8-A Instruction Set Architecture}
+			\item \href{https://developer.arm.com/architectures/learn-the-architecture/memory-management}{Armv8-A memory management}
+			\item \href{https://static.docs.arm.com/100940/0100/armv8_a_address%20translation_100940_0100_en.pdf}{ARMv8-A Address Translation}
+			\item \href{https://developer.arm.com/architectures/learn-the-architecture/armv8-a-memory-model}{Armv8-A memory model}
+			\item \href{https://developer.arm.com/architectures/learn-the-architecture/trustzone-for-armv8-a}{TrustZone for Armv8-A}
+			
+			
+			\item \href{https://developer.arm.com/architectures/learn-the-architecture/arm-corelink-generic-interrupt-controller-v3-and-v4-overview}{Generic Interrupt Controller}
+			\item \href{https://developer.arm.com/architectures/learn-the-architecture/generic-timer}{Generic Timer}
+			\item \href{https://developer.arm.com/architectures/learn-the-architecture/armv8-a-virtualization}{Armv8-A Virtualization}
+			\item \href{https://pdfs.semanticscholar.org/79d0/d56f06beb438366a503078cf0aa4b8c94396.pdf?_ga=2.174973478.580423229.1600893673-1168915030.1600893673}{Hardware and Software Support for Virtualization}
+			\item \href{https://doc.lagout.org/electronics/Game%20boy%20advance/ARM_BOOKS/ARM_System_Developers_Guide-Designing_and_Optimizing_System_Software.pdf}{ARM System Developer's Guide}
+			
+		\end{itemize} \\
+		\hline
+	\end{tabular}
+\end{document}
