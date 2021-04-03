@@ -1,0 +1,24 @@
+Hello, world!
+
+Today thanks to technology I am able to say "Hello" to
+my online classmates. And...Hello, classmates!
+
+I'm from Earth! It's a small but very intresting planet
+in our Solar System. And today I live in Moscow, Russia.
+
+I like science and programming and I enjoy learning new things.
+I graduated Moscow National Research Nuclear University, department of
+Physics and Electronics. Yes, I've always had a passion for science
+and different electronic devices.
+
+Now I work as an embedded system developer in a company which
+develops operating system based on Linux for mobile phones.
+
+I work near low level programming layer. It's a hardwaer and drivers.
+And it's a main reason why I've decide to enroll the course.
+I'd like to learn whole picture about the Computer Science,
+algorithms and data structures.
+I want to get a robust understanding of development in general.
+
+My name is Aleksandr and this is CS50! Bye!
+
