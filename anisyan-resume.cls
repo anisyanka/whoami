@@ -51,3 +51,13 @@
 	\end{tabular}
 	\egroup
 }
+
+\newcommand{\makepersonallinksMOM}[3]{
+	\bgroup
+	\def\arraystretch{1} % Default value: 1
+	\begin{tabular}{ l }
+		\faPhone \vspace{\medskipamount} \href{tel:+#1}{\texttt{\textbf{#2}}} \tabularnewline
+		\faEnvelope \vspace{\medskipamount} \href{mailto:#3}{\texttt{\textbf{#3}}}
+	\end{tabular}
+	\egroup
+}
